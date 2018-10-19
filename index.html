@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Track Suggester</title>
-  </head>
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Track Suggester</title>
+</head>
 
-  <body id="div1">
-    <div id="div1">
-      <p id="hello">hello</p>
+<body id="body">
+  <div class="containerMAIN">
+<!-- Below is the greeting card -->
+    <div class="card text-center" style="width:25rem" id="greeting">
+      <div class="card-header">
+        <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Welcome to the second code review project!</h5>
+        <p class="card-text"> Here you will take a brief survey to discover which program track is best suited for you at Epicodus</p>
+        <button class="btn btnadvance" id="begin">Begin</button>
+      </div>
     </div>
+<!-- below is the name input Card -->
+<div class="card text-center" style="width:25rem" id="ID">
+  <div class="card-header">
+    <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">First lets gather some basic information about you</h5>
+    <label for"name">Please enter your name:</label>
+    <input type="text" class="form-control" id="nme" placeholder="Please enter your name">
+    <button class="btn btnadvance" id="continue">Next</button>
+  </div>
+</div>
+<!-- below is the right or left brain question -->
+<div class="card text-center" style="width:25rem" id="brain">
+  <div class="card-header">
+    <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Would you consider yourself right or left brain dominant?</h5>
+    <label for"name">Please enter your name:</label>
+    <input type="text" class="form-control" id="nme" placeholder="Please enter your name">
+    <button type="submit" name="btn btn-next" class="next">Next</button>
+  </div>
+</div>
 
+
+
+<!-- Main contaner end div below -->
+</div>
   </body>
-</html>
+  </html>
