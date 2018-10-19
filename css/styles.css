@@ -1,0 +1,15 @@
+#div1 {
+  background: url(../img/bch.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  content: '';
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+p {
+  background-color: #22262D;
+  color: #5B6F85;
+}
