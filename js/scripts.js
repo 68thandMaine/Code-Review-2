@@ -1,9 +1,9 @@
-var C# = 0;
-var Ruby = 0;
-var PHP= 0;
-var CSS/Design = 0;
+var c=0;
+var r=0;
+var p=0;
+var j=0;
 
-function countAnswers(q1, q2, q3, q4, q5){
+function countAnswers(qq1, qq2, qq3, qq4,){
   if (q1 == "yes") {
     ww++;
     jb++;
@@ -15,6 +15,17 @@ function countAnswers(q1, q2, q3, q4, q5){
 }
 
 $(document).ready(function() {
+$('#formOne').submit(function(event) {
+  event.preventDefault();
+  var name = $("#nme").val();
+  console.log(name);
+  var qq1 = $('#q1').val();
+  var qq2 = $('#q2').val();
+  var qq3 = $('#q3').val();
+  var qq4 = $('#q4').val();
+})
+
+  // code for next buttons
   $('button').click(function(){
 
     if(this.id =='begin'){
@@ -46,5 +57,6 @@ $(document).ready(function() {
       $('#why').hide();
       $('#result').fadeIn();
     }
-});
+  });
+
 });
