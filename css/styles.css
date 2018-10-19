@@ -14,7 +14,7 @@
   display: block;
 }
 
-#ID, #brain, #work, #prsntpe, #why, #result {
+#ID, #brain, #work, #prsntpe, #why, #result, #Rizzzultzc, #Rizzzultzr, #Rizzzultzj, #Rizzzultzp {
   display: none;
 }
 .containerMAIN {
@@ -25,4 +25,8 @@
   align-items: center;
   justify-content:center
 
+}
+
+.card-imp-top {
+  padding-top: 5px;
 }

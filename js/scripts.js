@@ -66,7 +66,7 @@ $(document).ready(function() {
     var qq3 = $('#q3').val();
     var qq4 = $('#q4').val();
     countAnswers(q1, q2, q3, q4);
-    var answersArr = [c r, p, j];
+    var answersArr = [c, r, p, j];
     answers.Arr.sort();
     var topResult = answersArr[0];
 })
@@ -102,6 +102,14 @@ $(document).ready(function() {
     if(this.id == 'next3') {
       $('#why').hide();
       $('#result').fadeIn();
+    }
+
+    if(this.id == 'next4') {
+      $('#result').slideDown();
+      $('#Rizzzultzc').fadeIn();
+    } else if(this.id == 'next4') {
+      $('#result').slideDown();
+      $('#Rizzzultzr').fadeIn();
     }
   });
 
