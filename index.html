@@ -8,11 +8,11 @@
   <script src="js/scripts.js"></script>
   <title>Track Suggester</title>
 </head>
-
 <body id="body">
   <form id="formOne">
     <div class="containerMAIN">
       <!-- Below is the greeting card -->
+
       <div class="card text-center" style="width:25rem" id="greeting">
         <div class="card-header">
           <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
@@ -23,7 +23,9 @@
           <button type="submit" class="btn btnadvance" id="begin">Begin</button>
         </div>
       </div>
+
       <!-- below is the name input Card -->
+      
       <div class="card text-center" style="width:25rem" id="ID">
         <div class="card-header">
           <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
@@ -35,7 +37,9 @@
           <button type="submit" class="btn btnadvance" id="continue">Next</button>
         </div>
       </div>
+
       <!-- below is the right or left brain question -->
+
       <div class="card text-center" style="width:25rem" id="brain">
         <div class="card-header">
           <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
@@ -54,71 +58,80 @@
           <button type="submit" class="btn btnadvance" id="go_on">Next</button>
         </div>
       </div>
+
       <!-- below is the strartup vs business -->
-      <div class="card text-center" style="width:25rem" id="work">
-        <div class="card-header">
-          <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="question card-title">What type of working enviornment could you see your self thriving in</h5>
-          <div class="col-auto my-1">
-            <select class="custom-select mr-sm-2" id="q2">
-              <option selected>Choose...</option>
-              <option value="1">Fast paced web building agency</option>
-              <option value="2">A business or agency</option>
-              <option value="3">Working with backend servers</option>
-              <option value="4">Working on user interactivity</option>
-            </select>
+      <form id="formThree">
+        <div class="card text-center" style="width:25rem" id="work">
+          <div class="card-header">
+            <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
           </div>
-          <button type="submit" class="btn btnadvance" id="next1">Next</button>
+          <div class="card-body">
+            <h5 class="question card-title">What type of working enviornment could you see your self thriving in</h5>
+            <div class="col-auto my-1">
+              <select class="custom-select mr-sm-2" id="q2">
+                <option selected>Choose...</option>
+                <option value="1">Fast paced web building agency</option>
+                <option value="2">A business or agency</option>
+                <option value="3">Working with backend servers</option>
+                <option value="4">Working on user interactivity</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btnadvance" id="next1">Next</button>
+          </div>
         </div>
-      </div>
+      </form>
       <!-- below is the personality type -->
-      <div class="card text-center" style="width:25rem" id="prsntpe">
-        <div class="card-header">
-          <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="question card-title">Would you consider yourself to be a person who takes risks?</h5>
-          <div class="col-auto my-1">
-            <select class="custom-select mr-sm-2" id="q3">
-              <option selected>Choose...</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
+      <form id ="formFour">
+        <div class="card text-center" style="width:25rem" id="prsntpe">
+          <div class="card-header">
+            <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
           </div>
-          <button type="submit" class="btn btnadvance" id="next2">Next</button>
+          <div class="card-body">
+            <h5 class="question card-title">Would you consider yourself to be a person who takes risks?</h5>
+            <div class="col-auto my-1">
+              <select class="custom-select mr-sm-2" id="q3">
+                <option selected>Choose...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btnadvance" id="next2">Next</button>
+          </div>
         </div>
-      </div>
+      </form>
       <!-- below is the app  -->
-      <div class="card text-center" style="width:25rem" id="why">
-        <div class="card-header">
-          <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="question card-title">Which of the following options do you think sounds fun</h5>
-          <div class="col-auto my-1">
-            <select class="custom-select mr-sm-2" id="q4">
-              <option selected>Choose...</option>
-              <option value="a">Building web applications</option>
-              <option value="b">Working with databases</option>
-              <option value="c">Freelance web design</option>
-              <option value="d">Developing mobile applications</option>
-            </select>
+      <form id="formFive">
+        <div class="card text-center" style="width:25rem" id="why">
+          <div class="card-header">
+            <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
           </div>
-          <button type="submit" class="btn btnadvance" id="next3">Next</button>
+          <div class="card-body">
+            <h5 class="question card-title">Which of the following options do you think sounds fun</h5>
+            <div class="col-auto my-1">
+              <select class="custom-select mr-sm-2" id="q4">
+                <option selected>Choose...</option>
+                <option value="a">Building web applications</option>
+                <option value="b">Working with databases</option>
+                <option value="c">Freelance web design</option>
+                <option value="d">Developing mobile applications</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btnadvance" id="next3">Next</button>
+          </div>
         </div>
-      </div>
+      </form>
       <!-- below is the results page -->
-      <div class="card text-center" style="width:25rem" id="result">
-        <div class="card-header">
-          <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+      <form id="formSix">
+        <div class="card text-center" style="width:25rem" id="result">
+          <div class="card-header">
+            <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="question card-title">Congratulations <span id="name"> name </span> you have finished the survey. Click the button below to see which Epicodus track is right for you!</h5>
+            <button type="submit" class="btn btnadvance" id="next4">Next</button>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="question card-title">Congratulations <span id="nme"></span> you have finished the survey. Click the button below to see which Epicodus track is right for you!</h5>
-          <button type="submit" class="btn btnadvance" id="next4">Next</button>
-        </div>
-      </div>
+      </form>
       <!-- Main contaner end div below -->
     </div>
   </form>
@@ -162,6 +175,6 @@
     </div>
   </div>
 
-  
+  </form?
 </body>
 </html>
