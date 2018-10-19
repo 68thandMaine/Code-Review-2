@@ -14,7 +14,7 @@
   display: block;
 }
 
-#ID, #brain, #work, #prsntpe {
+#ID, #brain, #work, #prsntpe, #why, #result {
   display: none;
 }
 .containerMAIN {

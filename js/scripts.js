@@ -7,6 +7,7 @@
 
 $(document).ready(function() {
   $('button').click(function(){
+
     if(this.id =='begin'){
       $('#greeting').hide();
       $('#ID').show();
@@ -23,8 +24,18 @@ $(document).ready(function() {
     }
 
     if(this.id == 'next1'){
-      $(".work").hide();
-      // $('#work').show();
+      $("#work").hide();
+      $("#prsntpe").show();
+    }
+
+    if(this.id == 'next2'){
+      $('#prsntpe').hide();
+      $('#why').show();
+    }
+
+    if(this.id == 'next3') {
+      $('#why').hide();
+      $('#result').fadeIn();
     }
 });
 });
