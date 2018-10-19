@@ -9,15 +9,12 @@
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
-#ID {
-  display: none;
-}
 
 #greeting {
   display: block;
 }
 
-#brain {
+#ID, #brain, #work, #prsntpe {
   display: none;
 }
 .containerMAIN {

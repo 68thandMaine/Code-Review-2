@@ -11,7 +11,7 @@
 
 <body id="body">
   <div class="containerMAIN">
-<!-- Below is the greeting card -->
+    <!-- Below is the greeting card -->
     <div class="card text-center" style="width:25rem" id="greeting">
       <div class="card-header">
         <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
@@ -22,31 +22,91 @@
         <button class="btn btnadvance" id="begin">Begin</button>
       </div>
     </div>
-<!-- below is the name input Card -->
-<div class="card text-center" style="width:25rem" id="ID">
+    <!-- below is the name input Card -->
+    <div class="card text-center" style="width:25rem" id="ID">
+      <div class="card-header">
+        <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">First lets gather some basic information about you</h5>
+        <label for"name">Please enter your name:</label>
+        <input type="text" class="form-control" id="nme" placeholder="Please enter your name">
+        <button class="btn btnadvance" id="continue">Next</button>
+      </div>
+    </div>
+    <!-- below is the right or left brain question -->
+    <div class="card text-center" style="width:25rem" id="brain">
+      <div class="card-header">
+        <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Would you consider yourself right or left brain dominant?</h5>
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="1">Right</option>
+            <option value="2">Left</option>
+            <option value="3">A bit of both</option>
+          </select>
+        </div>
+        <button class="btn btnadvance" id="go_on">Next</button>
+      </div>
+    </div>
+    <!-- below is the strartup vs business -->
+    <div class="card text-center" style="width:25rem" id="work">
+      <div class="card-header">
+        <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">What type of working enviornment could you see your self thriving in</h5>
+        <div class="col-auto my-1">
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="wba">Fast paced web building agency</option>
+            <option value="biz">A business or agency</option>
+            <option value="serv">Working with backend servers</option>
+            <option value="frnt">Working on user interactivity</option>
+          </select>
+        </div>
+        <button class="btn btnadvance" id="next1">Next</button>
+      </div>
+    </div>
+<!-- below is the personality type -->
+    <div class="card text-center" style="width:25rem" id="prsntpe">
+      <div class="card-header">
+        <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Would you consider yourself to be a person who takes risks?</h5>
+        <div class="col-auto my-1">
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <button class="btn btnadvance" id="next2">Next</button>
+      </div>
+    </div>
+<!-- below is the app  -->
+<div class="card text-center" style="width:25rem" id="why">
   <div class="card-header">
     <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
   </div>
   <div class="card-body">
-    <h5 class="card-title">First lets gather some basic information about you</h5>
-    <label for"name">Please enter your name:</label>
-    <input type="text" class="form-control" id="nme" placeholder="Please enter your name">
-    <button class="btn btnadvance" id="continue">Next</button>
+    <h5 class="card-title">Which of the following options do you think sounds fun</h5>
+    <div class="col-auto my-1">
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="Yes">Building web applications</option>
+        <option value="No">Working with databases</option>
+        <option value=""
+      </select>
+    </div>
+    <button class="btn btnadvance" id="next2">Next</button>
   </div>
 </div>
-<!-- below is the right or left brain question -->
-<div class="card text-center" style="width:25rem" id="brain">
-  <div class="card-header">
-    <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Would you consider yourself right or left brain dominant?</h5>
-    <label for"name">Please enter your name:</label>
-    <input type="text" class="form-control" id="nme" placeholder="Please enter your name">
-    <button type="submit" name="btn btn-next" class="next">Next</button>
-  </div>
-</div>
-
 
 
 <!-- Main contaner end div below -->
