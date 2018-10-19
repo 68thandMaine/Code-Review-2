@@ -3,36 +3,37 @@ var r=0;
 var p=0;
 var j=0;
 
+console.log(j);
 function countAnswers(qq1, qq2, qq3, qq4,){
 // question 1 logic
-  if (q1 == "1") {
+  if (qq1 == "1") {
     j++;
     p++;
-  } else if (q1 == "2") {
+  } else if (qq1 == "2") {
     c++;
     r++;
-  } else if (q1 == "3") {
+  } else if (qq1 == "3") {
     c++;
     r++;
     j++;
     p++;
   }
 // question 2 logic
-  if (q2 == "1") {
+  if (qq2 == "1") {
     p++;
     r++;
-  } else if (q2 == "2") {
+  } else if (qq2 == "2") {
     c++;
     p++;
     j++;
-  } else if (q2 == "3") {
+  } else if (qq2 == "3") {
     c++;
-  } else if (q2 == "4") {
+  } else if (qq2 == "4") {
     j++;
     r++;
   }
 // question 3 logic
-  if (q3 =="yes") {
+  if (qq3 =="yes") {
     r++;
     p++;
   } else {
@@ -41,32 +42,35 @@ function countAnswers(qq1, qq2, qq3, qq4,){
     p++;
   }
 // question 4 logic Below
-  if (q4 == "a") {
+  if (qq4 == "a") {
     j++;
     r++;
-  } else if (q4 == "b") {
+  } else if (qq4 == "b") {
     c++;
     p++;
-  } else if (q4 == "c") {
+  } else if (qq4 == "c") {
     r++;
     j++;
     p++;
-  } else if (q4 == "d") {
+  } else if (qq4 == "d") {
     j++;
   }
 }
 
 $(document).ready(function() {
-$('#formOne').submit(function(event) {
-  event.preventDefault();
-  var name = $("#nme").val();
-  var qq1 = $('#q1').val();
-  var qq2 = $('#q2').val();
-  var qq3 = $('#q3').val();
-  var qq4 = $('#q4').val();
+  $('#formOne').submit(function(event) {
+    event.preventDefault();
+    var name = $("#nme").val();
+    var qq1 = $('#q1').val();
+    var qq2 = $('#q2').val();
+    var qq3 = $('#q3').val();
+    var qq4 = $('#q4').val();
+    countAnswers(q1, q2, q3, q4);
+    var answersArr = [c r, p, j];
+    answers.Arr.sort();
+    var topResult = answersArr[0];
 })
 
-console.log(j);
   // code for next buttons
   $('button').click(function(){
 
