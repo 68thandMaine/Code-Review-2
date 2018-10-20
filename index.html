@@ -9,35 +9,37 @@
   <title>Track Suggester</title>
 </head>
 <body id="body">
-  <form id="formOne">
-    <div class="containerMAIN">
+
+  <div class="containerMAIN">
+
       <!-- Below is the greeting card -->
 
-      <div class="card text-center" style="width:25rem" id="greeting">
+    <div class="card text-center" style="width:25rem" id="greeting">
         <div class="card-header">
           <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
         </div>
         <div class="card-body">
           <h5 class="question card-title">Welcome to the second code review project!</h5>
           <p class="card-text"> Here you will take a brief survey to discover which program track is best suited for you at Epicodus</p>
-          <button type="submit" class="btn btnadvance" id="begin">Begin</button>
+          <button type="submit" class="btn btn-primary" id="begin">Begin</button>
         </div>
       </div>
 
-      <!-- below is the name input Card -->
-      
-      <div class="card text-center" style="width:25rem" id="ID">
-        <div class="card-header">
-          <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
+    <div  id="ID">  <!-- below is the name input Card -->
+      <form id="formOne">
+        <div class="card text-center" style="width:25rem">
+          <div class="card-header">
+            <img class="card-imp-top" src="img/epi.png" alt="card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="question card-title">First lets gather some basic inquestionation about you</h5>
+            <label for"name">Please enter your name:</label>
+            <input type="text" class="question-control" id="nme" placeholder="Paul Mithcell">
+            <input type ="button" onclick = "myFunction()" class="btn btn-primary" id="continue">Next</button>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="question card-title">First lets gather some basic inquestionation about you</h5>
-          <label for"name">Please enter your name:</label>
-          <input type="text" class="question-control" id="nme" placeholder="Paul Mithcell">
-          <button type="submit" class="btn btnadvance" id="continue">Next</button>
-        </div>
-      </div>
-
+      </form>
+    </div>
       <!-- below is the right or left brain question -->
 
       <div class="card text-center" style="width:25rem" id="brain">
@@ -55,13 +57,13 @@
               <option value="3">A bit of both</option>
             </select>
           </div>
-          <button type="submit" class="btn btnadvance" id="go_on">Next</button>
+          <button class="btn btnprimary" id="go_on">Next</button>
         </div>
       </div>
 
       <!-- below is the strartup vs business -->
-      <form id="formThree">
-        <div class="card text-center" style="width:25rem" id="work">
+
+      <div class="card text-center" style="width:25rem" id="work">
           <div class="card-header">
             <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
           </div>
@@ -76,12 +78,12 @@
                 <option value="4">Working on user interactivity</option>
               </select>
             </div>
-            <button type="submit" class="btn btnadvance" id="next1">Next</button>
+            <button class="btn btnprimary" id="next1">Next</button>
           </div>
         </div>
-      </form>
+
       <!-- below is the personality type -->
-      <form id ="formFour">
+
         <div class="card text-center" style="width:25rem" id="prsntpe">
           <div class="card-header">
             <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
@@ -95,12 +97,13 @@
                 <option value="No">No</option>
               </select>
             </div>
-            <button type="submit" class="btn btnadvance" id="next2">Next</button>
+            <button class="btn btnprimary" id="next2">Next</button>
           </div>
         </div>
-      </form>
-      <!-- below is the app  -->
-      <form id="formFive">
+
+      <!-- what can you do with these  -->
+
+
         <div class="card text-center" style="width:25rem" id="why">
           <div class="card-header">
             <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
@@ -116,25 +119,26 @@
                 <option value="d">Developing mobile applications</option>
               </select>
             </div>
-            <button type="submit" class="btn btnadvance" id="next3">Next</button>
+            <button class="btn btnprimary" id="next3">Next</button>
           </div>
         </div>
-      </form>
+
       <!-- below is the results page -->
-      <form id="formSix">
+
+
         <div class="card text-center" style="width:25rem" id="result">
           <div class="card-header">
             <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
           </div>
           <div class="card-body">
             <h5 class="question card-title">Congratulations <span id="name"> name </span> you have finished the survey. Click the button below to see which Epicodus track is right for you!</h5>
-            <button type="submit" class="btn btnadvance" id="next4">Next</button>
+            <button type="submit" class="btn btnprimary" id="next4">Next</button>
           </div>
         </div>
-      </form>
+
       <!-- Main contaner end div below -->
-    </div>
   </form>
+</div>
   <!-- Rec pages -->
   <div class="containerMAIN">
     <!-- c# result -->
@@ -175,6 +179,6 @@
     </div>
   </div>
 
-  </form?
+
 </body>
 </html>
