@@ -1,18 +1,3 @@
-var C# = 0;
-var Ruby = 0;
-var PHP= 0;
-var CSS/Design = 0;
-
-function countAnswers(q1, q2, q3, q4, q5){
-  if (q1 == "yes") {
-    ww++;
-    jb++;
-  } else {
-    hp++;
-    dt++;
-
-  }
-}
 
 $(document).ready(function() {
   $('button').click(function(){
@@ -47,4 +32,14 @@ $(document).ready(function() {
       $('#result').fadeIn();
     }
 });
+$("#formOne").submit(function(event){
+  event.preventDefault();
+  var name =$("#nme").val();
+  console.log(name);
+});
+
+$("#formTwo").submit(function(event){
+  event.preventDefault();
+  var qq1 =$("#nme").val();
+  console.log(name);
 });
