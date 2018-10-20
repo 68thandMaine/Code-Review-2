@@ -23,8 +23,8 @@
       </div>
     </div>
     <!-- below is the name input Card -->
-      <div class="card text-center" style="width:25rem" id="ID">
-        <form id="formOne">
+    <div class="card text-center" style="width:25rem" id="ID">
+      <form id="formOne">
         <div class="card-header">
           <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
         </div>
@@ -37,7 +37,6 @@
       </form>
     </div>
     <!-- below is the right or left brain question -->
-
     <div class="card text-center" style="width:25rem" id="brain">
       <form id="formTwo">
         <div class="card-header">
@@ -47,7 +46,7 @@
           <h5 class="card-title">Would you consider yourself right or left brain dominant?</h5>
           <div class="col-auto my-1">
             <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <select class="custom-select mr-sm-2" id="q1">
               <option selected>Choose...</option>
               <option value="1">Right</option>
               <option value="2">Left</option>
@@ -58,70 +57,68 @@
         </div>
       </form>
     </div>
-
     <!-- below is the strartup vs business -->
-
     <div class="card text-center" style="width:25rem" id="work">
-      <div class="card-header">
-        <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">What type of working enviornment could you see your self thriving in</h5>
-        <div class="col-auto my-1">
-          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-            <option selected>Choose...</option>
-            <option value="wba">Fast paced web building agency</option>
-            <option value="biz">A business or agency</option>
-            <option value="serv">Working with backend servers</option>
-            <option value="frnt">Working on user interactivity</option>
-          </select>
+      <form id ="formThree">
+        <div class="card-header">
+          <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
         </div>
-        <button class="btn btnadvance" id="next1">Next</button>
-      </div>
-    </div>
-
+        <div class="card-body">
+          <h5 class="card-title">What type of working enviornment could you see your self thriving in</h5>
+          <div class="col-auto my-1">
+            <select class="custom-select mr-sm-2" id="q2">
+              <option selected>Choose...</option>
+              <option value="1">Fast paced web building agency</option>
+              <option value="2">A business or agency</option>
+              <option value="3">Working with backend servers</option>
+              <option value="4">Working on user interactivity</option>
+            </select>
+          </div>
+          <button class="btn btnadvance" id="next1">Next</button>
+        </div>
+      </form>
+    </div>=
     <!-- below is the personality type -->
-
     <div class="card text-center" style="width:25rem" id="prsntpe">
-      <div class="card-header">
-        <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Would you consider yourself to be a person who takes risks?</h5>
-        <div class="col-auto my-1">
-          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-            <option selected>Choose...</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-          </select>
+      <form id ="formFour">
+        <div class="card-header">
+          <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
         </div>
-        <button class="btn btnadvance" id="next2">Next</button>
-      </div>
+        <div class="card-body">
+          <h5 class="card-title">Would you consider yourself to be a person who takes risks?</h5>
+          <div class="col-auto my-1">
+            <select class="custom-select mr-sm-2" id="q3">
+              <option selected>Choose...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <button class="btn btnadvance" id="next2">Next</button>
+        </div>
+      </form>
     </div>
-
     <!-- below is the app  -->
-
     <div class="card text-center" style="width:25rem" id="why">
-      <div class="card-header">
-        <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Which of the following options do you think sounds fun</h5>
-        <div class="col-auto my-1">
-          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-            <option selected>Choose...</option>
-            <option value="a">Building web applications</option>
-            <option value="b">Working with databases</option>
-            <option value="c">Freelance web design</option>
-            <option value="d">Developing mobile applications</option>
-          </select>
+      <form id="formFive">
+        <div class="card-header">
+          <img class="card-imp-top" src="img/epi.png" alt="Card image cap">
         </div>
-        <button class="btn btnadvance" id="next3">Next</button>
-      </div>
+        <div class="card-body">
+          <h5 class="card-title">Which of the following options do you think sounds fun</h5>
+          <div class="col-auto my-1">
+            <select class="custom-select mr-sm-2" id="q4">
+              <option selected>Choose...</option>
+              <option value="a">Building web applications</option>
+              <option value="b">Working with databases</option>
+              <option value="c">Freelance web design</option>
+              <option value="d">Developing mobile applications</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit" id="next3">Next</button>
+        </div>
+      </form>
     </div>
-
     <!-- below is the results page -->
-
     <div class="card text-center" style="width:25rem" id="result">
       <div class="card-header">
         <img class="card-imp-top" src="img/epi.png" alt="Card image cap">

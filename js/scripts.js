@@ -31,15 +31,31 @@ $(document).ready(function() {
       $('#why').hide();
       $('#result').fadeIn();
     }
-});
-$("#formOne").submit(function(event){
-  event.preventDefault();
-  var name =$("#nme").val();
-  console.log(name);
-});
+  });
+  $("#formOne").submit(function(event){
+    event.preventDefault();
+    var name =$("#nme").val();
+    console.log(name);
+  });
+  $("#formTwo").submit(function(event){
+    event.preventDefault();
+    var qq1 =$("#q1").val();
+    console.log(qq1);
+  });
+  $("#formThree").submit(function(event){
+    event.preventDefault();
+    var qq2 =$("#q2").val();
+    console.log(qq2);
+  });
+  $("#formFour").submit(function(event){
+    event.preventDefault();
+    var qq3 =$("#q3").val();
+    console.log(qq3);
+  });
+  $("#formFive").submit(function(event){
+    event.preventDefault();
+    var qq4 =$("#q4").val();
+    console.log(qq4);
+  });
 
-$("#formTwo").submit(function(event){
-  event.preventDefault();
-  var qq1 =$("#nme").val();
-  console.log(name);
 });
