@@ -63,6 +63,7 @@ $(document).ready(function() {
 
   $("#formOne").submit(function(event){
     var name =$("#nme").val();
+  });
     // var qq1 =$('#q1').val();
     // var qq2 =$('#q2').val();
     // var qq3 =$('#q3').val();
@@ -71,7 +72,6 @@ $(document).ready(function() {
     // var answersARR = [c, r, p, j];
     // answersARR.sort();
     // var topResult = answersARR[0];
-  });
 
   $('button').click(function(){
     event.preventDefault();
