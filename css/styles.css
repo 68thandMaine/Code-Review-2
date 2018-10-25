@@ -10,23 +10,30 @@
 }
 
 
-#greeting {
-  display: block;
-}
+/* #greeting {
+  display: bloc;
+} */
 
-#ID, #brain, #work, #prsntpe, #why, #result, #resultC, #resultr, #resultj, #resultp {
+
+ #formOne, #result, #resultC, #resultr, #resultj, #resultp {
   display: none;
 }
 .containerMAIN {
 
   margin-top:16%;
-  height: 10em;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content:center
 
 }
 
-.card-imp-top {
+.card-imp-top, {
   padding-top: 5px;
 }
+
+ #formOne {
+   height: 300px;
+   overflow: scroll;
+   margin-bottom:50%;
+ }
