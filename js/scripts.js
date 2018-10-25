@@ -1,11 +1,9 @@
+function countAnswers(qq1, qq2, qq3, qq4) {
+  var c = 0;
+  var r = 0;
+  var p = 0;
+  var j = 0;
 
-function countAnswers(qq1, qq2, qq3, qq) {
-  var c= 0;
-  var r= 0;
-  var p= 0;
-  var j=  ;
-  var answersARR = [c, r, p, j];
-  var topResult = answersArr.sort();
 
 
   // question 1 logic
@@ -36,7 +34,7 @@ function countAnswers(qq1, qq2, qq3, qq) {
     r++;
   }
   // question 3 logic
-  if (qq3 =="yes") {
+  if (qq3 == "yes") {
     r++;
     p++;
   } else {
@@ -58,44 +56,72 @@ function countAnswers(qq1, qq2, qq3, qq) {
   } else if (qq4 == "d") {
     j++;
   }
-  return topResult
-  console.log(topResult)
+  var answersARR = [c, r, p, j];
+  console.log(answersARR)
+  return answersARR;
 };
 
 
+// front end
 $(document).ready(function() {
 
-  $("#form1").submit(function(event){
+  function determineWinner(array) {
+    //This function will take the results variable containing the array of counted answers and...
+    var c = array[0]
+    var r = array[1];
+    var p = array[2];
+    var j = array[3];
+    if (c >= r && c >= p && c >= j) {
+      //if c is the higest result then display resultC
+      $("#resultC").show();
+    } else if (r >= c && r >= p && r >= j) {
+      //if
+      $("#resultr").show()
+    } else if (p >= c && p >= r && p >= j) {
+      //if
+      $("#resultj").show()
+    } else if (j >= c && j >= p && j >= r) {
+      //if
+      $("#resultj").show()
+    }
+    //output the language card that should be deisplayed based off of the array results
+  };
+
+
+
+  $("#form1").submit(function(event) {
     event.preventDefault();
-    var qq1 =$("#q1").val();
-    var qq2 =$("#q2").val();
-    var qq3 =$("#q3").val();
-    var qq4 =$("#q4").val();
-    var results = countAnswers(qq1,qq2,qq3,qq4);
+    var qq1 = $("#q1").val();
+    var qq2 = $("#q2").val();
+    var qq3 = $("#q3").val();
+    var qq4 = $("#q4").val();
+    var results = countAnswers(qq1, qq2, qq3, qq4);
+    determineWinner(results)
     console.log(results)
-  });
-
-    $('button').click(function(){
-      if(this.id =='begin'){
-        $('#greeting').hide();
-        $('#formOne').show();
-      }
-    });
-    $('button').click(function(){
-      if (this.id =='end') {
-        $("#pt1").hide();
-      }
-    });
-
-
-
-
-
-
 
   });
 
+  $('button').click(function() {
+    if (this.id == 'begin') {
+      $('#greeting').hide();
+      $('#formOne').show();
+    }
+  });
+  $('button').click(function() {
+    if (this.id == 'end') {
+      $("#pt1").hide();
+    }
+  });
 
-  // answersARR.sort();
-  // var topResult = answersARR[0];
-  // console.log(name);
+
+
+
+
+
+
+});
+
+
+// answersARR.sort();
+// var topResult = answersARR[0];
+// console.log(name);
