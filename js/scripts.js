@@ -57,7 +57,7 @@ function countAnswers(qq1, qq2, qq3, qq4) {
     j++;
   }
   var answersARR = [c, r, p, j];
-  console.log(answersARR)
+
   return answersARR;
 };
 
